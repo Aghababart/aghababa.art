@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: "Open Sans";
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    
+    .background-img {
+       min-width: 100%;
+        min-height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    aside {
+        width: 16vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 7%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-end;
+
+        .info {
+            margin-bottom: 80px;
+
+            h1 {
+                color: white;
+                text-align: right;
+                font-size: 2.1rem;
+                margin-bottom: 20px;
+            }
+            p {
+                color: white;
+                text-align: right;
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
+
+        .contact {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .social-icon {
+                width: 28px;
+                height: auto;
+                margin-right: 15px;
+                
+                &.behance {
+                    width: 39px;
+                    height: auto;
+                    margin-right: 0px;
+                }
+                &.linkedin {
+                    width: 50px;
+                    height: auto;
+                    margin-right: 3px;
+                }
+                &.instagram {
+                    width: 23px;
+                    height: auto;
+                }
+            }
+
+        }
+
+     }
+
+
+     .center {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 30vw;
+
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+        p {
+            color: white;
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+     }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container {
+        width: 100vw;
+        min-height: 100vh;
+
+        .background-img {
+           min-width: 100%;
+            min-height: 100%;
+            position: absolute;
+            top: 0;
+            right: -2%;
+        }
+    
+        aside {
+            width: 16vw;
+            height: 100vh;
+            top: 0;
+            right: 10%;
+    
+            .info {
+                margin-bottom: 80px;
+                h1 {
+                    text-align: right;
+                    font-size: 2.1rem;
+                    margin-bottom: 20px;
+                }
+                p {
+                    text-align: right;
+                    font-size: 1rem;
+                }
+            }
+    
+         }
+    
+    
+         .center {
+            top: 80%;
+            left: 50%;
+    
+            h2 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+         }
+    }
+}
+@media only screen and (max-width: 900px) {
+    .container {
+        width: 100vw;
+        min-height: 100vh;
+
+        .background-img {
+           min-width: 100%;
+            min-height: 100%;
+            top: 0;
+            right: -2%;
+        }
+    
+        aside {
+            width: 60vw;
+            height: 100vh;
+            top: 40%;
+            right: 50%;
+            transform: translate(50%, -50%);
+            justify-content: center;
+            align-items: center;
+    
+            .info {
+                margin-bottom: 80px;
+                h1 {
+                    text-align: center;
+                    font-size: 2.1rem;
+                    margin-bottom: 20px;
+                }
+                p {
+                    text-align: center;
+                    font-size: 1.2rem;
+                }
+            }
+    
+         }
+    
+    
+         .center {
+            top: 82%;
+            left: 50%;
+            width: 60vw;
+    
+            h2 {
+                font-size: 1.8rem;
+                margin-bottom: 10px;
+            }
+            p {
+                font-size: 1.1rem;
+                font-weight: bold;
+            }
+         }
+    }
+}
